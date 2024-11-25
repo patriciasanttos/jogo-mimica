@@ -19,12 +19,14 @@ h1,
 h2,
 h3 {
   margin: 20px 0 10px 0;
+  font-weight: 500;
 }
 
 .titulo-jogo {
-  font-size: 50px;
+  font-size: 54px;
   color: #751FE5;
-  line-height: 65px;
+  line-height: 68px;
+  margin: 100px 0;
 }
 
 .texto-jogo {
@@ -77,3 +79,13 @@ h3 {
   margin-top: 5px;
 }
 
+.lista ul {
+  padding: 0px;
+}
+
+.lista li {
+  line-height: 30px;
+  list-style: none;
+
+  font-family: 'Inter';
+}
