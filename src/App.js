@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './pages/home';
+import AppRoute from './routes';
 
 function App() {
   return (
     <>
-    <Home/>
+    <AppRoute/>
     </>
   );
 }

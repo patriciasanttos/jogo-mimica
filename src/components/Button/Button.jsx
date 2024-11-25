@@ -1,8 +1,8 @@
 import "../Button/Button.css";
 
-function Button({ text }) {
+function Button({ text, onClick, className }) {
   return (
-    <button className="bg-primario">
+    <button onClick={onClick} className={className}>
       <h2 className="btn-text">{text}</h2>
     </button>
   );

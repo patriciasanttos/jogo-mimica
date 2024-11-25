@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
   font-family: "Aclonica", sans-serif;
+
+  color: white;
   background-color: #1E1E1E;
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-family: 'Inter';
+  margin: 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 20px 0 10px 0;
 }
 
 .titulo-jogo {
   font-size: 50px;
   color: #751FE5;
+  line-height: 65px;
 }
 
 .texto-jogo {
@@ -22,5 +38,42 @@ body {
 
 .bg-primario {
   background-color: #751FE5;
+}
+
+.btn-team {
+  width: 180px;
+  height: 50px;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.input-list {
+  width: 230px;
+  height: 35px;
+  background-color: transparent;
+
+  font-size: 18px;
+  color: #8e8e8e;
+  padding-left: 10px;
+
+  border-radius: 5px;
+  border: 1px solid #751FE5;
+}
+
+.input-list:focus {
+  outline: 1px solid #7c2ae7;
+}
+
+.add-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-add {
+  margin-top: 5px;
 }
 
