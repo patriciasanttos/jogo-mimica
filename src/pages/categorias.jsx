@@ -3,24 +3,16 @@ import Button from "../components/Button/Button";
 import Header from "../components/Header/Header";
 import IconeCategorias from "../assets/icone-categorias.svg";
 import { useState } from "react";
-  const categorias = ["Filmes", "Séries", "Animes"];
-
-
-
-
-
-
-
-
 
 function Categorias() {
   const [selectedCategoryList, setSelectedCategoryList] = useState([]);
+  const categorias = ["Filmes", "Séries", "Animes"];
 
   const navigate = useNavigate();
 
-  const onClickButton = () => {
-    navigate(-1);
-  };
+  const onClickStart = () => {
+    navigate('/jogoIniciado', {state: selectedCategoryList})
+  }
 
   const onClickSelectedCategoryList = (selectedCategory) => {
    if (selectedCategoryList.indexOf(selectedCategory) === -1) {
@@ -57,7 +49,7 @@ function Categorias() {
       <div className="btn-container">
         <div className="btn-next">
           <Button
-            onClick={onClickButton}
+            onClick={onClickStart}
             className="bg-primario btn-team"
             text="Iniciar"
           />
