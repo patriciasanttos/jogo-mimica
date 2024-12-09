@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import "../Header/Header.css";
-import Voltar from "../../assets/icone-voltar.svg";
+import Back from "../../assets/icon-back.svg";
 
-function Header({ icone, titulo, texto }) {
+function Header({ icon, title, text }) {
   const navigate = useNavigate();
 
   const onClickButton = () => {
@@ -13,16 +13,22 @@ function Header({ icone, titulo, texto }) {
     <div className="container-header">
       <div className="header" onClick={onClickButton}>
         <div>
-          <img src={Voltar} alt="" />
+          <img src={Back} alt="" />
         </div>
-        <div className="voltar">
+        <div className="back">
           <h3>Voltar</h3>
         </div>
       </div>
       <div className="selected-team">
-        <div><img src={icone} alt="" /></div>
-        <div className="titulo-header"><h1>{titulo}</h1></div>
-        <div className="texto-header"><p>{texto}</p></div>
+        <div>
+          <img src={icon} alt="" />
+        </div>
+        <div className="title-header">
+          <h1>{title}</h1>
+        </div>
+        <div className="text-header">
+          <p>{text}</p>
+        </div>
       </div>
     </div>
   );

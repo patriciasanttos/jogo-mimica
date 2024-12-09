@@ -5,29 +5,30 @@ function Home() {
   const navigate = useNavigate()
 
 
-  const onClickButtonEquipe = () => {
-    navigate("/equipe");
-  }
+  const onClickButtonTeam = () => {
+     navigate("/players", { state: { isIndividual: false } });
+    
+  };
 
    const onClickButtonIndividual = () => {
-     navigate("/individual");
+     navigate("/players", {state: {isIndividual: true}});
    };
 
   return (
     <>
-      <h1 className="titulo-jogo">Jogo da Mímica</h1>
+      <h1 className="title-game">Jogo da Mímica</h1>
       <div className="btn-container">
         <div>
           <Button
-            onClick={onClickButtonEquipe}
-            className="bg-primario btn-team"
+            onClick={onClickButtonTeam}
+            className="bg-primary btn-team"
             text="Equipe"
           />
         </div>
         <div>
           <Button
             onClick={onClickButtonIndividual}
-            className="bg-primario btn-team"
+            className="bg-primary btn-team"
             text="Individual"
           />
         </div>

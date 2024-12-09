@@ -5,9 +5,11 @@
 
     align-items: center;
     padding: 15px;
+    width: 100px;
+    cursor: pointer;
 }
 
-.voltar {
+.back {
     color: white;
     font-size: 14px;
 }
@@ -20,12 +22,12 @@
     margin-top: 20px;
 }
 
-.titulo-header {
+.title-header {
     font-size: 22px;
     font-weight: bolder;
 }
 
-.texto-header {
+.text-header {
     font-size: 18px;
     margin: 10px 0 20px 0px;
 }

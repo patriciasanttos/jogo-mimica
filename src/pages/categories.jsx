@@ -1,17 +1,19 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { categories } from "../categoryList";
 import Button from "../components/Button/Button";
 import Header from "../components/Header/Header";
-import IconeCategorias from "../assets/icone-categorias.svg";
+import CategoriesIcon from "../assets/icon-categories.svg";
 import { useState } from "react";
 
-function Categorias() {
+function Categories() {
+  const { state } = useLocation();
+  const { playersList } = state;
   const [selectedCategoryList, setSelectedCategoryList] = useState([]);
-  const categorias = ["Filmes", "Séries", "Animes"];
 
   const navigate = useNavigate();
 
   const onClickStart = () => {
-    navigate('/jogoIniciado', {state: selectedCategoryList})
+    navigate("/startGame", { state: { selectedCategoryList, playersList } });
   }
 
   const onClickSelectedCategoryList = (selectedCategory) => {
@@ -27,21 +29,21 @@ function Categorias() {
   return (
     <>
       <Header
-        icone={IconeCategorias}
-        titulo={"Categorias"}
-        texto={"Selecione a(s) categoria(s) desejada(s)"}
+        icon={CategoriesIcon}
+        title={"Categorias"}
+        text={"Selecione a(s) categoria(s) desejada(s)"}
       />
       <div className="selected-category">
-        {categorias.map((categoria) => {
+        {categories.map((category) => {
           return (
             <Button
-              onClick={() => onClickSelectedCategoryList(categoria)}
-              className={`btn-categorias ${
-                selectedCategoryList.indexOf(categoria) === -1
+              onClick={() => onClickSelectedCategoryList(category)}
+              className={`btn-categories ${
+                selectedCategoryList.indexOf(category) === -1
                   ? ""
                   : "categories-selected"
               }`}
-              text={categoria}
+              text={category}
             />
           );
         })}
@@ -50,7 +52,7 @@ function Categorias() {
         <div className="btn-next">
           <Button
             onClick={onClickStart}
-            className="bg-primario btn-team"
+            className="bg-primary btn-team"
             text="Iniciar"
           />
         </div>
@@ -59,4 +61,4 @@ function Categorias() {
   );
 }
 
-export default Categorias;
+export default Categories;
