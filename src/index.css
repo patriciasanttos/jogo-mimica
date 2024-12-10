@@ -49,6 +49,12 @@ h3 {
 
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-team:hover {
+  background-color: #601db8;
+  transition-duration: 0.5s;
 }
 
 .btn-categories {
@@ -58,6 +64,7 @@ h3 {
     border: 1px solid #751FE5;
     border-radius: 5px;
     background-color: transparent;
+    cursor: pointer;
 
     margin: 10px 0;
 }
@@ -66,7 +73,7 @@ h3 {
   border-radius: 5px;
   border: none;
   margin: 5px 0px;
-  width: 15%;
+  width: 20%;
   height: 35px;
 
   background-color: #684990;

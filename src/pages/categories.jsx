@@ -13,17 +13,23 @@ function Categories() {
   const navigate = useNavigate();
 
   const onClickStart = () => {
-    navigate("/startGame", { state: { selectedCategoryList, playersList } });
-  }
+    if (selectedCategoryList.length === 0) {
+      alert('Selecione uma ou mais categorias')
+    } else {
+      navigate("/startGame", { state: { selectedCategoryList, playersList } });
+    }
+  };
 
   const onClickSelectedCategoryList = (selectedCategory) => {
-   if (selectedCategoryList.indexOf(selectedCategory) === -1) {
-    setSelectedCategoryList([...selectedCategoryList, selectedCategory])
-   } else {
-    setSelectedCategoryList(selectedCategoryList.filter((item) => {
-      return selectedCategory !== item
-    }))
-   }
+    if (selectedCategoryList.indexOf(selectedCategory) === -1) {
+      setSelectedCategoryList([...selectedCategoryList, selectedCategory]);
+    } else {
+      setSelectedCategoryList(
+        selectedCategoryList.filter((item) => {
+          return selectedCategory !== item;
+        })
+      );
+    }
   };
 
   return (
@@ -54,6 +60,7 @@ function Categories() {
             onClick={onClickStart}
             className="bg-primary btn-team"
             text="Iniciar"
+            disabled={selectedCategoryList.length === 0}
           />
         </div>
       </div>

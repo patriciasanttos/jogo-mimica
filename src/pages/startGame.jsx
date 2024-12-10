@@ -32,14 +32,17 @@ function StartGame() {
   const itemToShow = filteredList[selectedIndex];
 
   const showNextItem = () => {
-    if (selectedIndex < filteredList.length - 1) {
-      setSelectedIndex(selectedIndex + 1);
-      setIsPointed(false);
-    } else {
-      alert("Fim do Jogo");
-    }
+       if (isPointed) {
+         if (selectedIndex < filteredList.length - 1) {
+           setSelectedIndex(selectedIndex + 1);
+           setIsPointed(false);
+         } else {
+           alert("Fim do Jogo");
+         }
+       } else {
+         alert("Marcar pontuação");
+       }
   };
-  console.log(points);
 
   const countPoints = (index) => {
     if (!isPointed) {
