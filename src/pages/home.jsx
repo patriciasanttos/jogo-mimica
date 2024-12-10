@@ -21,14 +21,14 @@ function Home() {
         <div>
           <Button
             onClick={onClickButtonTeam}
-            className="bg-primary btn-team"
+            className="bg-primary btn-home"
             text="Equipe"
           />
         </div>
         <div>
           <Button
             onClick={onClickButtonIndividual}
-            className="bg-primary btn-team"
+            className="bg-primary btn-home"
             text="Individual"
           />
         </div>
