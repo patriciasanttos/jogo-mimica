@@ -100,7 +100,7 @@ export const categoryList = [
   },
   {
     image:
-      "https://www.kisscitymag.com/wp-content/uploads/2024/01/titanic_cine_concert.jpeg",
+      "https://cinema10.com.br/upload/featuredImage.php?url=https%3A%2F%2Fcinema10.com.br%2Fupload%2Ffilmes%2Ffilmes_12336_tita.jpg",
     name: "Titanic",
     synopsis:
       "Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica viagem inaugural do Titanic em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor.",
@@ -108,7 +108,7 @@ export const categoryList = [
   },
   {
     image:
-      "https://recreio.com.br/media/_versions/filmes/harry_potter_capa_widelg.jpg",
+      "https://br.web.img3.acsta.net/medias/nmedia/18/93/01/50/20230712.jpg",
     name: "Harry Potter",
     synopsis:
       "Conta a história de um menino bruxo que fica órfão, depois que o vilão Voldemort assassina seus pais a sangue frio. O garoto se torna uma lenda no mundo mágico por ter sobrevivido ao feitiço mortal apenas com uma cicatriz na testa, mesmo sendo apenas um bebê.",
@@ -381,3 +381,5 @@ export const categoryList = [
     category: categoryEnums.Desenhos,
   },
 ];
+
+export const shuffleList = categoryList.sort(() => Math.random() - 0.5);

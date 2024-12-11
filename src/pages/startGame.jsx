@@ -1,8 +1,8 @@
 import Button from "../components/Button/Button";
-import { categoryList } from "../categoryList";
+import { shuffleList } from "../categoryList";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import IconHome from "../assets/icon-home.svg"
+import IconHome from "../assets/icon-home.svg";
 
 function StartGame() {
   const { state } = useLocation();
@@ -23,25 +23,23 @@ function StartGame() {
     navigate("/");
   };
 
-  let filteredList = categoryList.filter((item) => {
+  let filteredList = shuffleList.filter((item) => {
     return selectedCategoryList.includes(item.category);
   });
 
-  
-  // filteredList = shuffle(filteredList)
   const itemToShow = filteredList[selectedIndex];
 
   const showNextItem = () => {
-       if (isPointed) {
-         if (selectedIndex < filteredList.length - 1) {
-           setSelectedIndex(selectedIndex + 1);
-           setIsPointed(false);
-         } else {
-           alert("Fim do Jogo");
-         }
-       } else {
-         alert("Marcar pontuação");
-       }
+    if (isPointed) {
+      if (selectedIndex < filteredList.length - 1) {
+        setSelectedIndex(selectedIndex + 1);
+        setIsPointed(false);
+      } else {
+        alert("Fim do Jogo");
+      }
+    } else {
+      alert("Marcar pontuação");
+    }
   };
 
   const countPoints = (index) => {
