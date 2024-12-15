@@ -153,3 +153,9 @@ h3 {
   width: 90%;
   margin: auto;
 }
+
+@media (max-width:768px) {
+  .btn-score-point {
+    max-width: 30%;
+  } 
+}
