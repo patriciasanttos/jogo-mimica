@@ -172,6 +172,12 @@ h3 {
   }
 }
 
+@media (max-width: 468px) {
+  .mobile {
+    width: 50%;
+  }
+}
+
 @media (max-width: 390px) {
   .mobile {
     width: 60%;
