@@ -9,7 +9,7 @@ function StartGame() {
   const { selectedCategoryList, playersList } = state;
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [isPointed, setIsPointed] = useState(false);
+  const [pointedIndex, setPointedIndex] = useState(null);
   const [points, setPoints] = useState(
     playersList.map((person) => ({
       name: person,
@@ -30,10 +30,10 @@ function StartGame() {
   const itemToShow = filteredList[selectedIndex];
 
   const showNextItem = () => {
-    if (isPointed) {
+    if (pointedIndex !== null) {
       if (selectedIndex < filteredList.length - 1) {
         setSelectedIndex(selectedIndex + 1);
-        setIsPointed(false);
+        setPointedIndex(null);
       } else {
         alert("Fim do Jogo");
       }
@@ -43,11 +43,24 @@ function StartGame() {
   };
 
   const countPoints = (index) => {
-    if (!isPointed) {
+    if (!pointedIndex) {
       const newPoints = [...points];
       newPoints[index].points += 1;
       setPoints(newPoints);
-      setIsPointed(true);
+      setPointedIndex(index);
+    } else {
+      if (pointedIndex === index) {
+        const newPoints = [...points];
+        newPoints[index].points -= 1;
+        setPoints(newPoints);
+        setPointedIndex(null);
+      } else {
+        const newPoints = [...points];
+        newPoints[pointedIndex].points -= 1;
+        newPoints[index].points += 1;
+        setPoints(newPoints);
+        setPointedIndex(index);
+      }
     }
   };
 
@@ -75,11 +88,14 @@ function StartGame() {
           />
         </div>
       ))}
-      <Button
-        onClick={showNextItem}
-        text={"Próximo"}
-        className={"bg-primary btn-team"}
-      />
+
+      {pointedIndex !== null && (
+        <Button
+          onClick={showNextItem}
+          text={"Próximo"}
+          className={"bg-primary btn-team"}
+        />
+      )}
     </>
   );
 }

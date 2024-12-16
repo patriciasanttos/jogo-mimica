@@ -7,14 +7,14 @@ import TeamIcon from "../assets/icon-team.svg";
 import AddIcon from "../assets/icon-add.svg";
 
 function Players() {
-  const [playersList, setPlayersList] = useState([])
-  const [PlayersText, setPlayersText] = useState("")
+  const [playersList, setPlayersList] = useState([]);
+  const [PlayersText, setPlayersText] = useState("");
 
-  const { state } = useLocation()
-  const { isIndividual } = state
-  const limit = isIndividual ? 10 : 6
-  const playerText = isIndividual ? "pessoas" : "equipes"
-  
+  const { state } = useLocation();
+  const { isIndividual } = state;
+  const limit = isIndividual ? 10 : 6;
+  const playerText = isIndividual ? "pessoas" : "equipes";
+
   const navigate = useNavigate();
 
   const onClickButton = () => {
@@ -34,21 +34,23 @@ function Players() {
     }
   };
 
-    const onKeyDownPlayersText = (e) => {
-      if (e.key === "Enter") {
-        addPlayers();
-      }
-    };
+  const onKeyDownPlayersText = (e) => {
+    if (e.key === "Enter") {
+      addPlayers();
+    }
+  };
 
-const removePlayers = (playersToRemove) => {
-  playersList.filter((players) => {
-    return players !== playersToRemove;
-  });
-};
+  const removePlayers = (playersToRemove) => {
+    setPlayersList(
+      playersList.filter((players) => {
+        return players !== playersToRemove;
+      })
+    );
+  };
 
-const onChangePlayersText = (e) => {
-  setPlayersText(e.target.value)
-}
+  const onChangePlayersText = (e) => {
+    setPlayersText(e.target.value);
+  };
 
   return (
     <>
