@@ -71,7 +71,7 @@ function StartGame() {
           <Button
             onClick={() => countPoints(index)}
             text={`${person.name} ${person.points}`}
-            className="btn-score-point"
+            className="btn-score-point mobile"
           />
         </div>
       ))}
