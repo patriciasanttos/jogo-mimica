@@ -42,8 +42,8 @@ function StartGame() {
     }
   };
 
-  const countPoints = (index) => {
-    if (!pointedIndex) {
+  const countPoints = (index) => { 
+    if (pointedIndex === null) {
       const newPoints = [...points];
       newPoints[index].points += 1;
       setPoints(newPoints);
