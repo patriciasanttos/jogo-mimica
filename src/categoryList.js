@@ -99,6 +99,104 @@ export const categoryList = [
     category: categoryEnums.Series,
   },
   {
+    image: "https://example.com/images/game_of_thrones.jpg",
+    name: "Game of Thrones",
+    synopsis:
+      "Nove famílias nobres lutam pelo controle da terra mítica de Westeros enquanto um antigo inimigo ressurge.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/the_crown.jpg",
+    name: "The Crown",
+    synopsis:
+      "Uma dramatização da vida e reinado da Rainha Elizabeth II e dos eventos que moldaram o século XX.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/dark.jpg",
+    name: "Dark",
+    synopsis:
+      "Quatro famílias descobrem uma conspiração que abrange várias gerações envolvendo viagens no tempo.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/the_mandalorian.jpg",
+    name: "The Mandalorian",
+    synopsis:
+      "Um caçador de recompensas solitário percorre os confins da galáxia após a queda do Império.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/lucifer.jpg",
+    name: "Lucifer",
+    synopsis:
+      "O diabo abandona o inferno para viver em Los Angeles, onde ajuda a polícia a resolver crimes.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/the_boys.jpg",
+    name: "The Boys",
+    synopsis:
+      "Um grupo de vigilantes enfrenta super-heróis corruptos e abusivos em um mundo onde heróis são celebridades.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/the_witcher.jpg",
+    name: "The Witcher",
+    synopsis:
+      "O caçador de monstros Geralt de Rívia luta para encontrar seu lugar em um mundo onde humanos podem ser mais perversos que bestas.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/peaky_blinders.jpg",
+    name: "Peaky Blinders",
+    synopsis:
+      "Uma família de gângsteres liderada pelo astuto Tommy Shelby ganha poder na Inglaterra do pós-guerra.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/money_heist.jpg",
+    name: "La Casa de Papel",
+    synopsis:
+      "Um grupo de ladrões liderados pelo Professor planeja os maiores roubos da história da Espanha.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/cobra_kai.jpg",
+    name: "Cobra Kai",
+    synopsis:
+      "Décadas após os eventos de 'Karatê Kid', os antigos rivais Johnny e Daniel reabrem seus dojos.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/round_6.jpg",
+    name: "Round 6",
+    synopsis:
+      "Centenas de pessoas endividadas aceitam participar de jogos infantis mortais por um prêmio milionário.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/bridgerton.jpg",
+    name: "Bridgerton",
+    synopsis:
+      "A vida romântica e social de famílias aristocráticas na alta sociedade londrina do século XIX.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/the_queens_gambit.jpg",
+    name: "O Gambito da Rainha",
+    synopsis:
+      "Uma jovem prodígio do xadrez luta contra seus demônios pessoais em busca de grandeza.",
+    category: categoryEnums.Series,
+  },
+  {
+    image: "https://example.com/images/you.jpg",
+    name: "You",
+    synopsis:
+      "Um gerente de livraria se torna obcecado por uma mulher e faz de tudo para se infiltrar em sua vida.",
+    category: categoryEnums.Series,
+  },
+  {
     image:
       "https://cinema10.com.br/upload/featuredImage.php?url=https%3A%2F%2Fcinema10.com.br%2Fupload%2Ffilmes%2Ffilmes_12336_tita.jpg",
     name: "Titanic",
@@ -200,6 +298,90 @@ export const categoryList = [
     name: "Escola de Rock (2003)",
     synopsis:
       "Um músico desempregado se passa por professor substituto e ensina uma turma a amar o rock 'n' roll.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/cast_away.jpg",
+    name: "Náufrago",
+    synopsis:
+      "Um homem preso em uma ilha deserta luta para sobreviver enquanto busca um caminho de volta para casa.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/life_of_pi.jpg",
+    name: "As Aventuras de Pi",
+    synopsis:
+      "Um jovem indiano sobrevive a um naufrágio e forma um vínculo com um tigre em um bote salva-vidas.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/slumdog_millionaire.jpg",
+    name: "Quem Quer Ser um Milionário?",
+    synopsis:
+      "Um jovem de Mumbai revisita momentos de sua vida enquanto responde perguntas em um programa de TV.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/the_pursuit_of_happyness.jpg",
+    name: "À Procura da Felicidade",
+    synopsis:
+      "Um pai solteiro luta contra as adversidades para oferecer uma vida melhor para seu filho.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/et.jpg",
+    name: "E.T. - O Extraterrestre",
+    synopsis:
+      "Uma criança faz amizade com um alienígena perdido e tenta ajudá-lo a voltar para casa.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/the_hangover.jpg",
+    name: "Se Beber, Não Case!",
+    synopsis:
+      "Após uma noite de festa em Las Vegas, um grupo de amigos tenta lembrar o que aconteceu.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/knives_out.jpg",
+    name: "Entre Facas e Segredos",
+    synopsis:
+      "Um detetive investiga a morte de um patriarca de uma família rica.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/get_out.jpg",
+    name: "Corra!",
+    synopsis:
+      "Um jovem afro-americano descobre segredos perturbadores sobre a família de sua namorada branca.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/green_book.jpg",
+    name: "Green Book: O Guia",
+    synopsis:
+      "Durante uma turnê pelo sul dos Estados Unidos, um pianista negro e seu motorista italiano desenvolvem uma amizade inesperada.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/shutter_island.jpg",
+    name: "Ilha do Medo",
+    synopsis:
+      "Dois detetives investigam o desaparecimento de uma paciente em um hospital psiquiátrico remoto.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/the_godfather.jpg",
+    name: "O Poderoso Chefão",
+    synopsis:
+      "A saga de uma família ítalo-americana envolvida no crime organizado.",
+    category: categoryEnums.Filmes,
+  },
+  {
+    image: "https://example.com/images/forrest_gump.jpg",
+    name: categoryEnums.Filmes,
+    synopsis:
+      "A história de um homem simples e suas aventuras extraordinárias.",
     category: categoryEnums.Filmes,
   },
   {

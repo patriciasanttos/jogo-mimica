@@ -29,6 +29,13 @@ function StartGame() {
 
   const itemToShow = filteredList[selectedIndex];
 
+  const onClickJump = () => {
+    if (selectedIndex < filteredList.length - 1) {
+        setSelectedIndex(selectedIndex + 1);
+        setPointedIndex(null);
+    }
+  }
+
   const showNextItem = () => {
     if (pointedIndex !== null) {
       if (selectedIndex < filteredList.length - 1) {
@@ -89,13 +96,24 @@ function StartGame() {
         </div>
       ))}
 
-      {pointedIndex !== null && (
-        <Button
-          onClick={showNextItem}
-          text={"Próximo"}
-          className={"bg-primary btn-team"}
-        />
-      )}
+      <section className="btn-next-jump">
+        <div>
+          <Button
+            onClick={onClickJump}
+            text={"Pular"}
+            className={"bg-primary btn-team"}
+          />
+        </div>
+        <div>
+          {pointedIndex !== null && (
+            <Button
+              onClick={showNextItem}
+              text={"Próximo"}
+              className={"bg-primary btn-team"}
+            />
+          )}
+        </div>
+      </section>
     </>
   );
 }
