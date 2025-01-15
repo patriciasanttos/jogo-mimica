@@ -99,99 +99,111 @@ export const categoryList = [
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/game_of_thrones.jpg",
+    image:
+      "https://cdn-fastly.parrotanalytics.com/images/poster-hyphen/3f8c79e1-6904-4064-86bc-38e1b3ebfdf7.jpg",
     name: "Game of Thrones",
     synopsis:
       "Nove famílias nobres lutam pelo controle da terra mítica de Westeros enquanto um antigo inimigo ressurge.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/the_crown.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e2/The-Crown-Poster-S2.jpg/220px-The-Crown-Poster-S2.jpg",
     name: "The Crown",
     synopsis:
       "Uma dramatização da vida e reinado da Rainha Elizabeth II e dos eventos que moldaram o século XX.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/dark.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/pt/f/f6/Dark_%28s%C3%A9rie%29.jpg",
     name: "Dark",
     synopsis:
       "Quatro famílias descobrem uma conspiração que abrange várias gerações envolvendo viagens no tempo.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/the_mandalorian.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/pt/e/e7/The_Mandalorian_season_2_poster.jpg",
     name: "The Mandalorian",
     synopsis:
       "Um caçador de recompensas solitário percorre os confins da galáxia após a queda do Império.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/lucifer.jpg",
+    image:
+      "https://s2.glbimg.com/V1b1ogmPNduSCh-VNztIqzttH0M=/top/e.glbimg.com/og/ed/f/original/2018/05/11/luciferposter.jpg",
     name: "Lucifer",
     synopsis:
       "O diabo abandona o inferno para viver em Los Angeles, onde ajuda a polícia a resolver crimes.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/the_boys.jpg",
+    image:
+      "https://media.fstatic.com/ATzIf5GHZ6z8ENwpQAJWYxBIYLA=/322x478/smart/filters:format(webp)/media/movies/covers/2020/08/the-boys-22.jpg",
     name: "The Boys",
     synopsis:
       "Um grupo de vigilantes enfrenta super-heróis corruptos e abusivos em um mundo onde heróis são celebridades.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/the_witcher.jpg",
+    image:
+      "https://cinema10.com.br/upload/series/series_1593_the%20witcher.jpg",
     name: "The Witcher",
     synopsis:
       "O caçador de monstros Geralt de Rívia luta para encontrar seu lugar em um mundo onde humanos podem ser mais perversos que bestas.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/peaky_blinders.jpg",
+    image: "https://jmonline.com.br/userfiles/image/2022/06/10/01.jpg",
     name: "Peaky Blinders",
     synopsis:
       "Uma família de gângsteres liderada pelo astuto Tommy Shelby ganha poder na Inglaterra do pós-guerra.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/money_heist.jpg",
+    image:
+      "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2021/11/17/156247952-la-casa-de-papel.jpeg",
     name: "La Casa de Papel",
     synopsis:
       "Um grupo de ladrões liderados pelo Professor planeja os maiores roubos da história da Espanha.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/cobra_kai.jpg",
+    image:
+      "https://conteudo.imguol.com.br/c/splash/87/2021/12/30/arte-de-divulgacao-da-4-temporada-de-cobra-kai-1640891539281_v2_1080x1350.jpg",
     name: "Cobra Kai",
     synopsis:
       "Décadas após os eventos de 'Karatê Kid', os antigos rivais Johnny e Daniel reabrem seus dojos.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/round_6.jpg",
+    image:
+      "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
     name: "Round 6",
     synopsis:
       "Centenas de pessoas endividadas aceitam participar de jogos infantis mortais por um prêmio milionário.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/bridgerton.jpg",
+    image: "https://br.web.img3.acsta.net/pictures/20/11/04/11/32/4052345.jpg",
     name: "Bridgerton",
     synopsis:
       "A vida romântica e social de famílias aristocráticas na alta sociedade londrina do século XIX.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/the_queens_gambit.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61D4EEaQVRL._AC_UF1000,1000_QL80_.jpg",
     name: "O Gambito da Rainha",
     synopsis:
       "Uma jovem prodígio do xadrez luta contra seus demônios pessoais em busca de grandeza.",
     category: categoryEnums.Series,
   },
   {
-    image: "https://example.com/images/you.jpg",
-    name: "You",
+    image:
+      "https://s2-valor.glbimg.com/IoynRPjnHGeN-ixAN5bfQ071C3c=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/8/p/lO4XVLQxW7HE5MCVyBFg/foto05cul-102-dvd1-d32.jpg",
+    name: "Você",
     synopsis:
       "Um gerente de livraria se torna obcecado por uma mulher e faz de tudo para se infiltrar em sua vida.",
     category: categoryEnums.Series,
@@ -301,85 +313,95 @@ export const categoryList = [
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/cast_away.jpg",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_752003-MLA77921606172_082024-OO.jpg",
     name: "Náufrago",
     synopsis:
       "Um homem preso em uma ilha deserta luta para sobreviver enquanto busca um caminho de volta para casa.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/life_of_pi.jpg",
+    image:
+      "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/30/40/20328542.jpg",
     name: "As Aventuras de Pi",
     synopsis:
       "Um jovem indiano sobrevive a um naufrágio e forma um vínculo com um tigre em um bote salva-vidas.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/slumdog_millionaire.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61MRK+ASWAL._AC_UF1000,1000_QL80_.jpg",
     name: "Quem Quer Ser um Milionário?",
     synopsis:
       "Um jovem de Mumbai revisita momentos de sua vida enquanto responde perguntas em um programa de TV.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/the_pursuit_of_happyness.jpg",
+    image:
+      "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/96/34/20028591.jpg",
     name: "À Procura da Felicidade",
     synopsis:
       "Um pai solteiro luta contra as adversidades para oferecer uma vida melhor para seu filho.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/et.jpg",
+    image:
+      "https://br.web.img3.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg",
     name: "E.T. - O Extraterrestre",
     synopsis:
       "Uma criança faz amizade com um alienígena perdido e tenta ajudá-lo a voltar para casa.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/the_hangover.jpg",
+    image:
+      "https://br.web.img3.acsta.net/medias/nmedia/18/87/29/37/19874003.jpg",
     name: "Se Beber, Não Case!",
     synopsis:
       "Após uma noite de festa em Las Vegas, um grupo de amigos tenta lembrar o que aconteceu.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/knives_out.jpg",
+    image:
+      "https://cdn.awsli.com.br/1181/1181256/produto/49049800da0aadf3cf.jpg",
     name: "Entre Facas e Segredos",
     synopsis:
       "Um detetive investiga a morte de um patriarca de uma família rica.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/get_out.jpg",
+    image: "https://br.web.img3.acsta.net/pictures/17/04/19/21/08/577190.jpg",
     name: "Corra!",
     synopsis:
       "Um jovem afro-americano descobre segredos perturbadores sobre a família de sua namorada branca.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/green_book.jpg",
+    image: "https://br.web.img2.acsta.net/pictures/18/08/15/13/09/1891759.jpg",
     name: "Green Book: O Guia",
     synopsis:
       "Durante uma turnê pelo sul dos Estados Unidos, um pianista negro e seu motorista italiano desenvolvem uma amizade inesperada.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/shutter_island.jpg",
+    image:
+      "https://www.papodecinema.com.br/wp-content/uploads/2012/04/20180529-download.jpg",
     name: "Ilha do Medo",
     synopsis:
       "Dois detetives investigam o desaparecimento de uma paciente em um hospital psiquiátrico remoto.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/the_godfather.jpg",
+    image:
+      "https://br.web.img3.acsta.net/medias/nmedia/18/90/93/20/20120876.jpg",
     name: "O Poderoso Chefão",
     synopsis:
       "A saga de uma família ítalo-americana envolvida no crime organizado.",
     category: categoryEnums.Filmes,
   },
   {
-    image: "https://example.com/images/forrest_gump.jpg",
-    name: categoryEnums.Filmes,
+    image:
+      "https://upload.wikimedia.org/wikipedia/pt/c/c0/ForrestGumpPoster.jpg",
+    name: "Forrest Gump: O Contador de Histórias",
     synopsis:
       "A história de um homem simples e suas aventuras extraordinárias.",
     category: categoryEnums.Filmes,

@@ -33,6 +33,8 @@ function StartGame() {
     if (selectedIndex < filteredList.length - 1) {
         setSelectedIndex(selectedIndex + 1);
         setPointedIndex(null);
+    } else {
+        alert("Fim do Jogo");
     }
   }
 
